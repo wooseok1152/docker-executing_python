@@ -1,5 +1,5 @@
-FROM python
-WORKDIR /usr/scr/app
+FROM python:latest
+RUN pip3 install numpy
 COPY . .
-CMD ["test.py"]
 ENTRYPOINT ["python3"]
+CMD ["test.py"]
